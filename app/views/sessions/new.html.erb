@@ -1,0 +1,26 @@
+<div class="container">
+
+<h1 class="text-center text-primary">Sign In to Transaction</h1>
+<div>
+    <br>
+    <br>
+    <br>
+    <div class="col-xs-1 col-md-3"></div>
+    <div class="col-xs-10 col-md-6 ">
+    
+        <%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
+
+            <div class="form-group h1">
+                <%= f.text_field :username, autofocus: true, autocomplete: "username", placeholder: "Enter your username", class: "form-control feildy" %>
+            </div>
+            <br>
+            <br>
+            <%= f.submit "Log in", class: 'btn btn-success btn-block btn-lg' %>
+
+        <% end %>
+
+    </div>
+    <div class="col-xs-1 col-md-3 "></div>
+
+</div>
+</div>

@@ -10,7 +10,6 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require bootstrap
  *= require_tree .
  *= require_self
  */
@@ -71,4 +70,8 @@ body {
   padding: 1.5rem;
   color: white;
   text-decoration: none;
+}
+
+.fieldy {
+  height: 4rem;
 }
