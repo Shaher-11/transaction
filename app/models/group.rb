@@ -9,7 +9,5 @@ class Group < ApplicationRecord
 
   validates :name, presence: true, length: { minimum: 3, maximum: 25 }
 
-  validates :image, presence: true
-
   scope :asc, -> { order('name ASC') }
 end
