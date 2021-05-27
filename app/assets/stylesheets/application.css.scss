@@ -10,18 +10,22 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require bootstrap
  *= require_tree .
  *= require_self
  */
-$base-color: #a8a8a8;
+
+@import 'bootstrap/dist/css/bootstrap';
+
+$base-color: white;
 $base-color2: #5fbf23;
 $base-color3: #3778c2;
 
 body {
-  background-color: #f1f3f2;
+  background-color: white;
 }
 
-.transcation-total {
+.totals {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
@@ -36,7 +40,7 @@ body {
   }
 }
 
-.transcation-listing {
+.listings {
   background-color: #fff;
   margin: 1.5rem 0.2rem;
 }
