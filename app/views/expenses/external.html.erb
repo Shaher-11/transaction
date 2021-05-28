@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container app idx">
 <% content_for(:title, "My External Expenses") %>
 
 <%= display_expenses('list',@expenses)  %>
 
-<div class="row add-btn-background">
-    <%= link_to 'ADD EXPENSE', new_expense_path, :class=>"col-sm-12 text-center btn btn-primary add-btn" %>
+<div class="row">
+    <%= link_to 'Add Expense', new_expense_path, :class=>"col-sm-12 text-center btn btn-primary add-btn" %>
 </div>
 </div>

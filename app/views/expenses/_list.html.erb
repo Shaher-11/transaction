@@ -1,15 +1,15 @@
   <div class="container">
     <div class="col-sm-12 total">
-      <span>Total amount:</span> 
-      <span>&#36;<%= obj.sum{|expense| expense.amount} %></span>
+      <span class="h1">Total amount:</span> 
+      <span class="h3">&#36;<%= obj.sum{|expense| expense.amount} %></span>
     </div>
     <% obj.each do |expense| %>
       <div class="col-sm-12 col-md-6">
-        <div class="row listings">
+        <div class="row listings h1">
         <%= display_image(expense)%>
           <div class="col-sm-7 grey-color">
-            <p><%= expense.name %></p>
-            <p><%= expense.created_at.day %>-<%= expense.created_at.month %>-<%= expense.created_at.year %> by <%= expense.author.username %></p>
+            <p class="text-dark">name: <%= expense.name %></p>
+            <p class="text-dark">Created at: <%= expense.created_at.day %>-<%= expense.created_at.month %>-<%= expense.created_at.year %> by <%= expense.author.username %></p>
           </div>
           <div class="col-sm-3 bold">&#36;<%= expense.amount %></div>
         </div>
