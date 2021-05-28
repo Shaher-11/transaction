@@ -1,0 +1,8 @@
+<div class="container">
+<% content_for(:title, "All Groups") %>
+<%= display_groups('list',@groups)  %>
+
+<div class="row add-btn-background">
+    <%= link_to 'CREATE A NEW GROUP', new_group_path, :class=>"col-sm-12 text-center add-btn" %>
+</div>
+</div>
