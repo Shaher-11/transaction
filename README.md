@@ -4,6 +4,15 @@
 
 > The transactions rails application is an application for grouping transactions so users can create, edit and delete their transactions as well as grouping them.
 
+![screenshot](./app/assets/images/transac.png)
+
+
+
+
+# Capstone Domain Model
+
+![screenshot](./app/assets/images/erd-1.png)
+
 ## Built With
 
 - Ruby v2.7.0
