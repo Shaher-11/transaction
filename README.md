@@ -2,7 +2,7 @@
 
 # Transactions App
 
-> The transactions rails application is an application for grouping transactions so users can create, edit and delete their transactions as well as grouping them.
+> The transactions rails application is an application for grouping transactions so users can create, their transactions as well as grouping them.
 
 ![screenshot](./app/assets/images/transac.png)
 
@@ -21,7 +21,7 @@
 
 ## Live Demo
 
-[Live Link](https://stormy-cove-12125.herokuapp.com/posts)
+[Live Link](https://trasnac.herokuapp.com/login)
 
 ## Getting Started
 
@@ -37,6 +37,10 @@ Postgres: >=9.5
 ### Setup
 
 Instal gems with:
+
+```
+yarn install
+```
 
 ```
 bundle install
