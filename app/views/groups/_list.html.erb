@@ -1,13 +1,12 @@
 <div class="container">
     <% obj.each do |group| %>
-      <%= link_to(group) do %>
+     <h3> <%= link_to(group) do %></h3>
         <div class="col-sm-12 col-md-6">
-          <div class="row transcation-listing">
-                    <%= display_group_image(group)%>
-
-            <div class="col-sm-7 grey-color">
-            <p class="text-secondary h6 m-0 p-0 py-1"><strong>Group Name: </strong><%= group.name %></p>
-            <p class="text-secondary h6 m-0 p-0 py-2"><strong>Created: </strong> <%= group.created_at.day %>-<%= group.created_at.month %>-<%= group.created_at.year %></p>
+          <div class="row listings">
+            <%= display_group_image(group)%>
+            <div class="col-sm-7 ">
+            <p class="text-secondary h3 m-0 p-0 py-1"><strong>Name: </strong><%= group.name %></p>
+            <p class="text-secondary h3 m-0 p-0 py-2"><strong>Created: </strong> <%= group.created_at.day %>-<%= group.created_at.month %>-<%= group.created_at.year %></p>
             </div>
           </div>
         </div>

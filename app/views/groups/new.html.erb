@@ -1,23 +1,31 @@
-<div class="container">
+<div class="container app mt-5">
 <% content_for(:title, "New Groups") %>
 
-<h1 class="text-center">Create Transactions Group</h1>
-
+<h1 class="text-center font-weight-bold">Create Transaction Group</h1>
+<br>
+<br>
+<br>
 <div class="row">
     <div class="col-xs-1 col-md-3"></div>
     <div class="col-xs-10 col-md-6 ">
         <%= form_with(model: @group, local: true) do |f| %>
             <div class="form-group">
-                <%= f.label :name %>
-                <%= f.text_field :name, autofocus: true, placeholder: "Group Name", class: "form-control" %>
+                <%= f.text_field :name, autofocus: true, placeholder: "Group Name", class: "form-control fieldy" %>
             </div>
+            <br>
+            <br>
             <div class="form-group">
-                <%= f.label :image %>
-                <%= f.file_field :image, class: "form-control" %>
+                <%= f.file_field :image, class: "form-control fieldy" %>
             </div>
-            <%= submit_tag("CREATE GROUP", :class=>"btn btn-success") %>
+            <br>
+            <br>
+            <div class="text-center">
+            <%= submit_tag("Create", :class=>"btn btn-success btn-lg btn-block") %>
         <% end %>
+        </div>
     </div>
+    <br>
+    <br>
     <div class="col-xs-1 col-md-3 "></div>
 </div>
 </div>
