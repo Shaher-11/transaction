@@ -1,19 +1,23 @@
-<div class="navbar navbar-default navbar-static-top  text-white bg-dark">
-  <%= link_to "Transaction", root_path, class: "navbar-brand white h1" %>
-  <div class="container app">
+<div class="navbar navbar-default navbar-static-top bg-dark">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
     </button>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <% if logged_in? %>
         <ul class="nav navbar-nav col-md-6">
-          <li class="white"><%= link_to "Expenses", expenses_path, class: "btn btn-success"%></li>
-          <li><%= link_to "External Expenses", external_path, class: "btn btn-success"%></li>
-          <li><%= link_to "Groups", groups_path, class: "btn btn-success"%></li>
+        <div class="row">
+        <li class="white"><%= link_to "Expenses", expenses_path, class: "btn text-white"%></li>
+        </div>
+         <div class="row">
+          <li><%= link_to "External Expenses", external_path, class: "btn text-white"%></li>
+        </div>
+         <div class="row">
+                   <li><%= link_to "Groups", groups_path, class: "btn text-white"%></li>
+        </div>
         </ul>
         <ul class="nav navbar-right col-md-4">
           <li class="col-md-8 user-name text-right">
             <i class="fa fa-user"></i>
-            <%= @current_user.username.present? && @current_user.username %>
+            <%= @current_user.present? && @current_user.username %>
           </li>
           <li class="col-md-4 logout">
             <%= link_to("Log Out", "/logout",
@@ -21,17 +25,17 @@
           </li>
         </ul>
       <% else %>
-        <ul class="nav navbar-right col-md-4">
+        <ul class="nav navbar-right col-md-4 ml-5">
           <li class="col-md-4 my-3">
             <%= link_to("Sign Up", "/signup",
-                                class: "btn btn-success") %>
+                                class: "btn btn-success text-dark") %>
           </li>
           <li class="col-md-4 my-3">
             <%= link_to("Log In", "/login",
-                                class: "btn btn-success") %>
+                                class: "btn btn-success text-dark") %>
           </li>
         </ul>
       <% end %>
-    </div>
-  </div>
+   </div>
+  </div> 
 </div>
