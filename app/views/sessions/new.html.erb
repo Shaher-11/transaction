@@ -7,7 +7,9 @@
     <div class="w-50 text-center mt-5">
         <%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
             <div class="form-group">
-        <%= f.text_field :username, autofocus: true, autocomplete: "username", placeholder: "Enter your username", class: "form-control feildy" %>
+        <%= f.label :username %>
+        <br>
+        <%= f.text_field :username, autofocus: true, autocomplete: "username", placeholder: "username", class: "form-control feildy" %>
             </div>
             <br>
             <br>
