@@ -1,0 +1,39 @@
+<div class="container app mt-5">
+<% content_for(:title, "New Expense") %>
+
+<h1 class="text-center font-weight-bold">Create New Expense</h1>
+
+<div class="sign_form bg-custom-light rounded  p-2 py-5">
+    <% if @groups.nil?%>
+        <%= link_to 'Create Group', new_group_path %>
+    <% end %>
+    <div class="row">
+        <div class="col-xs-1 col-md-3"></div>
+        <div class="col-xs-10 col-md-6 ">
+            <%= form_with(model: @expense, local: true) do |form| %>
+                <div class="form-group">
+                    <%= form.text_field :name, placeholder: "Name", id: "name", class: "form-control fieldy" %>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <%= form.number_field :amount, placeholder: "Price", id: "amount", class: "form-control fieldy" %><br>
+                </div>
+                <br>
+                <% unless @groups.nil? %>
+                    <div class="form-group">
+                        <%= form.select :group_id, options_from_collection_for_select(@groups, :id, :name), {:include_blank => 'Choose a group'}, {class: "form-control fieldy"} %>
+                    </div>
+                <% end %>
+                <br>
+                <br>
+                <br>
+                <div class="text-center">
+                <%= submit_tag("Add new expense", :class=>"btn btn-success btn-lg btn-block") %>
+                </div>
+            <% end %>
+        </div>
+        <div class="col-xs-1 col-md-3 "></div>
+    </div>
+</div>
+</div>

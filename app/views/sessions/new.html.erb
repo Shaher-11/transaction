@@ -1,0 +1,23 @@
+
+<div class="text-center signup">
+<div class="conatiner w-100 mt-5 app text-center">
+    <div class="text-center  mb-5 w-50">
+        <h1 class="text-center font-weight-bold"> Sign In</h1>
+    </div>   
+    <div class="w-50 text-center mt-5">
+        <%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
+            <div class="form-group">
+        <%= f.label :username %>
+        <br>
+        <%= f.text_field :username, autofocus: true, autocomplete: "username", placeholder: "username", class: "form-control feildy" %>
+            </div>
+            <br>
+            <br>
+            <%= f.submit "Log in", class: 'btn btn-success btn-block btn-lg' %>
+        <% end %>
+
+        </div> 
+
+    </div>
+</div>
+</div>

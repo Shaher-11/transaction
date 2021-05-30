@@ -1,0 +1,50 @@
+<div class="navbar navbar-default navbar-static-top bg-dark">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+    </button>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+      <% if logged_in? %>
+
+
+      <div class="link">
+        <ul class="nav navbar-nav col-md-6">
+        <div class="row">
+        <div class="col-4 h1">
+        <li class="white link h1"><%= link_to "Expenses", expenses_path, class: "btn text-white font-weight-bold "%></li>
+        </div>
+          <div class="col-4 h1">
+          <li class="link h1"><%= link_to "External Expenses", external_path, class: "btn text-white font-weight-bold "%></li>
+        </div>
+          <div class="col-4 h1">
+            <li class="link h1"><%= link_to "Groups", groups_path, class: "btn text-white font-weight-bold "%></li>
+        </div>
+        </div>
+        </ul>
+      </div>
+
+        <ul class="nav navbar-right col-md-4">
+          <li class="col-md-8 user-name text-right">
+            <i class="fa fa-user"></i>
+            <div class="wel mr-5 text-center mb-5">
+          <h3 class="text-white text-center font-weight-bold">Welcome <%= @current_user.present? && @current_user.username %></h3>    
+          </div>
+          </li>
+          <li class="col-md-4 out">
+            <%= link_to("Log Out", "/logout",
+                                class: "btn btn-xs btn-danger text-dark") %>
+          </li>
+        </ul>
+      <% else %>
+        <ul class="nav navbar-right col-md-4 ml-5">
+          <li class="col-md-4 my-3">
+            <%= link_to("Sign Up", "/signup",
+                                class: "btn btn-success text-dark") %>
+          </li>
+          <li class="col-md-4 my-3">
+            <%= link_to("Log In", "/login",
+                                class: "btn btn-success text-dark") %>
+          </li>
+        </ul>
+      <% end %>
+   </div>
+  </div> 
+</div>

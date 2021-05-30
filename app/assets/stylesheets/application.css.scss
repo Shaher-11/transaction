@@ -13,15 +13,18 @@
  *= require_tree .
  *= require_self
  */
-$base-color: #a8a8a8;
+
+@import 'bootstrap/dist/css/bootstrap';
+
+$base-color: white;
 $base-color2: #5fbf23;
 $base-color3: #3778c2;
 
 body {
-  background-color: #f1f3f2;
+  background-color: white;
 }
 
-.transcation-total {
+.totals {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
@@ -36,7 +39,7 @@ body {
   }
 }
 
-.transcation-listing {
+.listings {
   background-color: #fff;
   margin: 1.5rem 0.2rem;
 }
@@ -62,9 +65,52 @@ body {
   padding: 1.5rem;
 }
 
+.out {
+  margin-top: 2rem !important;
+}
+
 .add-btn {
   border: 1px solid white;
   padding: 1.5rem;
   color: white;
   text-decoration: none;
+}
+
+.fieldy {
+  height: 4rem !important;
+}
+
+.app {
+  height: 100vh;
+  width: 43vw;
+  background-image: linear-gradient(to top left, var(--main), #08111d);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.links,
+.links a {
+  color: white;
+  font-size: 2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+.btons {
+  margin-top: 21rem !important;
+  width: 70%;
+  margin-left: 8rem !important;
+}
+
+.signup {
+  margin-left: 35rem !important;
+}
+
+.wel {
+  margin-left: 25rem !important;
+}
+
+.link {
+  font-size: 2rem;
+  font-weight: bold !important;
 }

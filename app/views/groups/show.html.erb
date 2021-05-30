@@ -1,0 +1,9 @@
+<div class="container">
+<% content_for(:title, "All Groups") %>
+
+<%= display_expenses('expenses/list',@expenses)  %>
+
+<div class="row">
+    <%= link_to 'New Expense', new_expense_path, :class=>"col-sm-12 text-center btn btn-primary add-btn" %>
+</div>
+</div>

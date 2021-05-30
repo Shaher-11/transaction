@@ -1,0 +1,9 @@
+<div class="container app indx">
+<% content_for(:title, "My Expenses") %>
+
+<%= display_expenses('list',@expenses)  %>
+
+<div class="row">
+    <%= link_to 'New Expense', new_expense_path, :class=>"col-sm-12 text-center btn btn-primary add-btn" %>
+</div>
+</div>
