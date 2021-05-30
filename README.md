@@ -2,10 +2,10 @@
 
 # Transactions App
 
-> The transactions rails application is an application for grouping transactions so users can create, their transactions as well as grouping them.
+> This is the capstone project of the Microverse Ruby on Rails module. The project is completed as part of the Microverse remote software developement curriculum using the pair programming approach. In this project I created transaction log app where users can create an account with their username and add expenses which can be grouped and solo into the names of their choice. Also Users can  view each expenses in each group. and Users can track the total amount of their expenses.
+
 
 ![screenshot](./app/assets/images/transac.png)
-
 
 
 
@@ -18,6 +18,7 @@
 - Ruby v2.7.0
 - Ruby on Rails v6.1.3.2
 - Bootstrap
+- Rspec
 
 ## Live Demo
 
@@ -72,7 +73,7 @@ Open `http://localhost:3000/` in your browser.
 ### Run tests
 
 ```
-    rpsec --format documentation
+    rspec --format documentation
 ```
 
 
@@ -94,7 +95,7 @@ TBA
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Shaher-11/dealo/issues).
+Feel free to check the [issues page](https://github.com/Shaher-11/transaction/issues).
 
 ## Show your support
 
