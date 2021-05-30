@@ -51,7 +51,6 @@ feature 'User is Navigating through the application' do
   end
 end
 
-
 feature 'Creating New groups and expenses' do
   background do
     User.create(username: 'shaher')
