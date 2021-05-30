@@ -77,10 +77,6 @@ Open `http://localhost:3000/` in your browser.
 ```
 
 
-### Deployment
-
-TBA
-
 ## Author
 
  👤 **Shaher Shamroukh**
@@ -104,6 +100,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
+- Design idea by [Gregoire Vella](https://www.behance.net/gregoirevella)
 
 ## 📝 License
 
